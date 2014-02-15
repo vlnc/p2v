@@ -3,6 +3,22 @@ P2V
 
 A command line tool to convert a physical machine to a virtual machine (linux only)
 
+# Needed
+
+- qemu-img
+- sha1sum
+- ssh/scp
+- nfs-commons
+- qemu-nbd
+- sha1sum
+- virt-install
+- virt-viewer
+- nfs-commons
+
 # Install
 
+apt-get install qemu-img sha1sum ssh/scp nfs-commons qemu-nbd sha1sum virt-install virt-viewer nfs-commons
+
 # How to use
+
+sh start.sh
