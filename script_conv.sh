@@ -21,19 +21,6 @@ fi
 # Ce script permet le transfer d'un peripherique vers un hote distant (via ssh) ou alors sur un disque de stockage externe.
 # Minimum requis : ssh
 
-########
-# Draw #
-########
-
-#time dd if=$device bs=1024 | scp -c arcfour "dd of=$cheminDistant/$image" root@$ip:$cheminDistant
-#echo "Envoie de l'image via ssh"
-#time scp $cheminLocal/$image root@$ip:$cheminDistant
-#time dd if=$device bs=1024 | ssh -c arcfour $ip "dd of=$cheminDistant/$image";;
-#dd if=$dev | pv -s $var1 -petr | of=$cheminStockage/$outFile bs=1024
-#echo -e "\nEnvoie du resultat du hash sha1 de $image sur $ip:$cheminDistant\n"
-#time scp -c arcfour128 $cheminLocal/$image.sum root@$ip:$cheminDistant
-#rsync -v --progress -e ssh  $cheminLocal/$image.sum root@$ip:$cheminDistant
-
 #############
 # Variables #
 #############
